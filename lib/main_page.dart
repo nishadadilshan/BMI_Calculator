@@ -19,17 +19,24 @@ class _MainPageState extends State<MainPage> {
            children: [
              Row(
                children: [
-                 Column(
-                   children: [
-                     Text("Male Icon"),
-                     Text("Male"),
-                   ],
+                 Padding(
+                   padding: EdgeInsets.all(10.0),
+                   child: Column(
+                     children: [
+                      Icon(Icons.male),
+                       Text("Male"),
+                     ],
+                   ),
                  ),
-                 Column(
-                   children: [
-                     Text("Female Icon"),
-                     Text("Female"),
-                   ],
+                 Spacer(),
+                 Padding(
+                   padding: EdgeInsets.all(10.0),
+                   child: Column(
+                     children: [
+                       Icon(Icons.female),
+                       Text("Female"),
+                     ],
+                   ),
                  )
                ],
              )
