@@ -23,7 +23,7 @@ class _MainPageState extends State<MainPage> {
                    padding: EdgeInsets.all(10.0),
                    child: Column(
                      children: [
-                      Icon(Icons.male),
+                      Icon(Icons.male, size: 150,),
                        Text("Male"),
                      ],
                    ),
@@ -33,8 +33,45 @@ class _MainPageState extends State<MainPage> {
                    padding: EdgeInsets.all(10.0),
                    child: Column(
                      children: [
-                       Icon(Icons.female),
+                       Icon(Icons.female, size: 150,),
                        Text("Female"),
+                     ],
+                   ),
+                 )
+               ],
+             ),
+             Row(
+               children: [
+                 Padding(
+                   padding: EdgeInsets.all(10.0),
+                   child: Column(
+                     children: [
+                       Text("Height" , style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
+                       Text("176", style: TextStyle(color: Colors.blue, fontSize: 60, fontWeight:FontWeight.bold),),
+                       Row(
+                        children: [
+                          FloatingActionButton(onPressed:null, child: Icon(Icons.remove, size: 30,),),
+                          const SizedBox(width: 15),
+                          FloatingActionButton(onPressed:null, child: Icon(Icons.add , size: 30,),)
+                        ], 
+                       )
+                     ],
+                   ),
+                 ),
+                 Spacer(),
+                 Padding(
+                   padding: EdgeInsets.all(10.0),
+                   child: Column(
+                     children: [
+                       Text("Weight" , style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
+                       Text("90", style: TextStyle(color: Colors.blue, fontSize: 60, fontWeight:FontWeight.bold),),
+                       Row(
+                         children: [
+                         FloatingActionButton(onPressed:null, child: Icon(Icons.remove, size: 30,),),
+                     const SizedBox(width: 15),
+                     FloatingActionButton(onPressed:null, child: Icon(Icons.add , size: 30,),)
+                     ],
+                       )
                      ],
                    ),
                  )
