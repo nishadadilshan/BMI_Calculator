@@ -50,9 +50,9 @@ class _MainPageState extends State<MainPage> {
                        Text("176", style: TextStyle(color: Colors.blue, fontSize: 60, fontWeight:FontWeight.bold),),
                        Row(
                         children: [
-                          FloatingActionButton(onPressed:null, child: Icon(Icons.remove, size: 30,),),
-                          const SizedBox(width: 15),
-                          FloatingActionButton(onPressed:null, child: Icon(Icons.add , size: 30,),)
+                          FloatingActionButton(onPressed:null,backgroundColor: Colors.redAccent,shape:CircleBorder(), child: Icon(Icons.remove, size: 30,),),
+                          SizedBox(width: 15),
+                          FloatingActionButton(onPressed:null,backgroundColor: Colors.greenAccent,shape:CircleBorder(), child: Icon(Icons.add , size: 30,),)
                         ], 
                        )
                      ],
@@ -67,9 +67,9 @@ class _MainPageState extends State<MainPage> {
                        Text("90", style: TextStyle(color: Colors.blue, fontSize: 60, fontWeight:FontWeight.bold),),
                        Row(
                          children: [
-                         FloatingActionButton(onPressed:null, child: Icon(Icons.remove, size: 30,),),
-                     const SizedBox(width: 15),
-                     FloatingActionButton(onPressed:null, child: Icon(Icons.add , size: 30,),)
+                         FloatingActionButton(onPressed:null,backgroundColor: Colors.redAccent,shape:CircleBorder(), child: Icon(Icons.remove, size: 30,)),
+                     SizedBox(width: 15),
+                     FloatingActionButton(onPressed:null,backgroundColor: Colors.greenAccent,shape:CircleBorder(), child: Icon(Icons.add , size: 30,),)
                      ],
                        )
                      ],
