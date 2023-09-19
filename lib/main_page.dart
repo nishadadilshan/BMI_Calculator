@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_projects/constants.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -50,7 +51,7 @@ class _MainPageState extends State<MainPage> {
                      child: Column(
                        children: [
                          Text("Height" , style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
-                         Text("176", style: TextStyle(color: Colors.blue, fontSize: 60, fontWeight:FontWeight.bold),),
+                         Text("176", style: kHeightWidthText),
                          Row(
                           children: [
                             FloatingActionButton(onPressed:null,backgroundColor: Colors.redAccent,shape:CircleBorder(), child: Icon(Icons.remove, size: 30,),),
@@ -67,7 +68,7 @@ class _MainPageState extends State<MainPage> {
                      child: Column(
                        children: [
                          Text("Weight" , style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
-                         Text("90", style: TextStyle(color: Colors.blue, fontSize: 60, fontWeight:FontWeight.bold),),
+                         Text("90", style: kHeightWidthText),
                          Row(
                            children: [
                            FloatingActionButton(onPressed:null,backgroundColor: Colors.redAccent,shape:CircleBorder(), child: Icon(Icons.remove, size: 30,)),
